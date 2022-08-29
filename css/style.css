@@ -168,6 +168,9 @@ body {
 
 .header__container a:hover {
   color: #070707;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .header__line {
@@ -343,7 +346,7 @@ body {
   margin: 0px 0px 100px 0px;
 }
 
-.contacts__button a {
+.contacts__button button {
   font-size: 1.25rem;
   border: 1px solid #000;
   background-color: black;
@@ -361,7 +364,14 @@ body {
   height: 40px;
 }
 
-.contacts__button span {
+.contacts__button button:hover {
+  background-color: orange;
+  -webkit-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.contacts__button p {
   color: white;
 }
 
