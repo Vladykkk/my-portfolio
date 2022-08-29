@@ -101,12 +101,25 @@ h6 {
   font-style: normal;
 }
 
+/* ============================ */
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Gilroy";
+}
+
+header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
 /* ============================ */
@@ -137,10 +150,6 @@ body {
 }
 
 /* ============================ */
-
-.header {
-  margin: 0px 0px 30px 0px;
-}
 
 .header__container ul {
   display: -webkit-box;
@@ -173,8 +182,16 @@ body {
           transition-duration: 0.5s;
 }
 
-.header__line {
-  border: 1px solid #828282;
+/* ============================ */
+
+.page__title {
+  margin: 80px 0px 0px 0px;
+}
+
+.title {
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 .title__header {
@@ -205,12 +222,6 @@ body {
 
 .title__img img {
   width: 100%;
-}
-
-.title {
-  font-size: 2.125rem;
-  font-weight: 700;
-  text-align: center;
 }
 
 .about {
@@ -365,7 +376,7 @@ body {
 }
 
 .contacts__button button:hover {
-  background-color: orange;
+  background-color: #cc2323;
   -webkit-transition-duration: 0.7s;
        -o-transition-duration: 0.7s;
           transition-duration: 0.7s;
