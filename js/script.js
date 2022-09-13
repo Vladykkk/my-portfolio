@@ -40,11 +40,11 @@ burger.onclick = function () {
 
 list.onclick = function () {
 	list.classList.remove("active");
-	moveLock.classList.toggle("lock");
+	// moveLock.classList.toggle("lock");
 }
 
 // Close menu on link click
-document.querySelectorAll(".header__link").forEach(n => n.addEventListener("click", () => {
+document.querySelectorAll(".header__logo, .header__link").forEach(n => n.addEventListener("click", () => {
 	burger.classList.remove("active");
 	menu.classList.remove("active");
 }))
