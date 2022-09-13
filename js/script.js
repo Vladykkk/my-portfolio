@@ -1,9 +1,6 @@
-import * as flsFunctions from "./modules/functions.js";
-
-flsFunctions.isWebp();
-
-// Main
-
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+var __webpack_exports__ = {};
 let burger = document.querySelector(".header__burger");
 let menu = document.querySelector(".header__menu");
 let list = document.querySelector(".header__list");
@@ -31,3 +28,5 @@ document.querySelectorAll(".header__logo, .header__link").forEach(n => n.addEven
 	burger.classList.remove("active");
 	menu.classList.remove("active");
 }))
+/******/ })()
+;
