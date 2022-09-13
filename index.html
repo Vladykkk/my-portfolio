@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20220910170002" />
+	<link rel="stylesheet" href="css/style.css" />
 	<title>Portfolio</title>
 </head>
 
@@ -12,25 +12,23 @@
 		<div class="wrapper">
 			<header class="header">
 	<div class="container">
-		<nav class="navbar">
-			<ul class="navbar__list">
-				<li class="navbar__item">
-					<a href="#home" class="navbar__link">Home</a>
-				</li>
-				<li class="navbar__item">
-					<a href="#about" class="navbar__link">About</a>
-				</li>
-				<li class="navbar__item">
-					<a href="#skills" class="navbar__link">Skills</a>
-				</li>
-				<li class="navbar__item">
-					<a href="#portfolio" class="navbar__link">Portfolio</a>
-				</li>
-				<li class="navbar__item">
-					<a href="#contacts" class="navbar__link">Contacts</a>
-				</li>
-			</ul>
-		</nav>
+		<div class="header__body">
+			<a href="#" class="header__logo">
+				<img src="img/header-logo/logo.svg" alt="" />
+			</a>
+			<div class="header__burger">
+				<span></span>
+			</div>
+			<nav class="header__menu">
+				<ul class="header__list">
+					<li><a href="#home" class="header__link">Home</a></li>
+					<li><a href="#about" class="header__link">About</a></li>
+					<li><a href="#skills" class="header__link">Skills</a></li>
+					<li><a href="#portfolio" class="header__link">Portfolio</a></li>
+					<li><a href="#contacts" class="header__link">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>
 	</div>
 </header>
 
@@ -152,7 +150,7 @@
 			</main>
 			<footer class="footer"></footer>
 
-			<script src="js/app.min.js?_v=20220910170002"></script>
+			<script src="js/script.js"></script>
 		</div>
 	</body>
 </html>
