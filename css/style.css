@@ -1,4 +1,4 @@
-/* Imports */
+/* Reset style */
 
 * {
   padding: 0;
@@ -87,6 +87,8 @@ h6 {
   font-weight: inherit;
 }
 
+/* Fonts imports */
+
 @font-face {
   font-family: Gilroy;
   font-display: swap;
@@ -123,14 +125,14 @@ header {
           box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* Container */
+/* Container max-width */
 
 [class*=__container] {
   max-width: 73.125em;
   margin: 0 auto;
 }
 
-/* Media queries */
+/* Media Queries */
 
 /* Wrapper */
 
@@ -151,6 +153,8 @@ header {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
+
+/* Header */
 
 .header {
   position: fixed;
@@ -220,6 +224,8 @@ header {
   transition: all 0.3s ease 0s;
 }
 
+/* Disabling out of burger menu scroll */
+
 /* Top */
 
 .top {
@@ -253,17 +259,17 @@ header {
   margin: 0px 0px 30px 0px;
 }
 
-.text__name {
+.top__name {
   font-size: 2.125rem;
   font-weight: 700;
 }
 
-.text__about {
+.top__about {
   font-size: 1.25rem;
   line-height: 1.2;
 }
 
-/* Modifiers */
+/* Another Classes */
 
 .title {
   font-size: 2.125rem;
@@ -311,6 +317,8 @@ header {
   margin: 0px 0px 100px 0px;
 }
 
+/* Programs */
+
 .programs__title {
   margin: 0px 0px 85px 0px;
 }
@@ -345,6 +353,8 @@ header {
   color: #828282;
   text-transform: uppercase;
 }
+
+/* Technologies */
 
 .technologies__title {
   margin: 0px 0px 85px 0px;
@@ -414,40 +424,28 @@ header {
 }
 
 .contacts__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 0px 0px 60px 0px;
-}
-
-.contacts__button button {
+  color: white;
   font-size: 1.25rem;
   border: 1px solid #000;
   background-color: black;
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 180px;
-  height: 40px;
-}
-
-.contacts__button p {
-  color: white;
+  max-width: 180px;
+  min-height: 40px;
+  width: 100%;
 }
 
 .contacts__socials {
   margin: 0px 0px 50px 0px;
 }
+
+/* Socials */
 
 .socials__title {
   font-size: 1.25rem;
