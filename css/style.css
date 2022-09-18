@@ -297,7 +297,7 @@ header {
 .about {
   padding: 100px 0px;
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: #e5e5e5;
 }
 
 .about__container {
@@ -305,7 +305,7 @@ header {
 }
 
 .about__title {
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 30px 0px;
 }
 
 .about__text {
@@ -325,7 +325,7 @@ header {
 }
 
 .skills__title {
-  margin: 0px 0px 70px 0px;
+  margin: 0px 0px 50px 0px;
 }
 
 .skills__programs {
@@ -336,6 +336,7 @@ header {
 
 .programs__title {
   margin: 0px 0px 85px 0px;
+  font-weight: 700;
 }
 
 .programs__apps {
@@ -365,7 +366,7 @@ header {
 }
 
 .programs__name {
-  color: #828282;
+  color: #8d99ae;
   text-transform: uppercase;
 }
 
@@ -373,6 +374,7 @@ header {
 
 .technologies__title {
   margin: 0px 0px 85px 0px;
+  font-weight: 700;
 }
 
 .technologies__icons {
@@ -402,7 +404,7 @@ header {
 }
 
 .technologies__name {
-  color: #828282;
+  color: #8d99ae;
   text-transform: uppercase;
 }
 
@@ -415,7 +417,7 @@ header {
 .projects {
   padding: 100px 0;
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: #e5e5e5;
 }
 
 .projects__title {
@@ -430,7 +432,7 @@ header {
 }
 
 .contacts__title {
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 30px 0px;
 }
 
 .contacts__subtitle {
@@ -460,14 +462,19 @@ header {
   margin: 0px 0px 50px 0px;
 }
 
-/* Socials */
+/* Footer */
 
-.socials__title {
-  margin: 0px 0px 30px 0px;
-  font-size: 1.25rem;
+.footer {
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+  background-color: #e5e5e5;
 }
 
-.socials__icons {
+.footer__title {
+  margin: 0px 0px 50px 0px;
+}
+
+.footer__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,16 +485,16 @@ header {
   margin: 0px 0px 40px 0px;
 }
 
-.socials__icons img {
+.footer__icons img {
   min-height: 60px;
   width: 100%;
 }
 
-.socials__subtitle {
+.footer__subtitle {
   color: #828282;
 }
 
-.socials__subtitle p {
+.footer__subtitle p {
   line-height: 1.2;
 }
 
