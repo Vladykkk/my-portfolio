@@ -1,38 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" id="home">
-	<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="icon" href="img/logo/logoWhite.svg" />
-	<link rel="stylesheet" href="css/style.css" />
-	<title>Portfolio</title>
-</head>
-
+	@@include('html/head.html',{ "title":"Portfolio" })
 	<body>
 		<div class="wrapper">
-			<header class="header">
-	<div class="header__container">
-		<div class="header__body">
-			<a href="#" class="header__logo">
-				<img src="img/logo/logo.svg" alt="" />
-			</a>
-			<div class="header__burger">
-				<span></span>
-			</div>
-			<nav class="header__menu">
-				<ul class="header__list">
-					<li><a href="#about" class="header__link">About</a></li>
-					<li><a href="#skills" class="header__link">Skills</a></li>
-					<li><a href="#projects" class="header__link">Projects</a></li>
-					<li><a href="#contacts" class="header__link">Contacts</a></li>
-					<li><a href="#socials" class="header__link">Socials</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-</header>
-
+			@@include('html/header.html',{})
 			<main class="page">
 				<section class="top">
 					<div class="top__container">
@@ -47,7 +18,7 @@
 							</div>
 						</div>
 						<div class="top__img">
-							<picture><source srcset="img/me.webp" type="image/webp"><img src="img/me.jpg" /></picture>
+							<img src="@img/me.jpg" />
 						</div>
 					</div>
 				</section>
@@ -73,19 +44,19 @@
 							<div class="programs__row">
 								<div class="programs__body">
 									<div class="programs__icon">
-										<img src="img/skills/programs/vscode.svg" />
+										<img src="@img/skills/programs/vscode.svg" />
 									</div>
 									<p class="programs__name">Visual Studio Code</p>
 								</div>
 								<div class="programs__body">
 									<div class="programs__icon">
-										<img src="img/skills/programs/githubDekstop.svg" />
+										<img src="@img/skills/programs/githubDekstop.svg" />
 									</div>
 									<p class="programs__name">Github Desktop</p>
 								</div>
 								<div class="programs__body">
 									<div class="programs__icon">
-										<img src="img/skills/programs/figma.svg" />
+										<img src="@img/skills/programs/figma.svg" />
 									</div>
 									<p class="programs__name">Figma</p>
 								</div>
@@ -100,31 +71,31 @@
 							<div class="technologies__row">
 								<div class="technologies__body">
 									<div class="technologies__icon">
-										<img src="img/skills/technologies/html.svg" alt="" />
+										<img src="@img/skills/technologies/html.svg" alt="" />
 									</div>
 									<p class="technologies__name">html</p>
 								</div>
 								<div class="technologies__body">
 									<div class="technologies__icon">
-										<img src="img/skills/technologies/css.svg" alt="" />
+										<img src="@img/skills/technologies/css.svg" alt="" />
 									</div>
 									<p class="technologies__name">css</p>
 								</div>
 								<div class="technologies__body">
 									<div class="technologies__icon">
-										<img src="img/skills/technologies/sass.svg" alt="" />
+										<img src="@img/skills/technologies/sass.svg" alt="" />
 									</div>
 									<p class="technologies__name">sass / scss</p>
 								</div>
 								<div class="technologies__body">
 									<div class="technologies__icon">
-										<img src="img/skills/technologies/js.svg" alt="" />
+										<img src="@img/skills/technologies/js.svg" alt="" />
 									</div>
 									<p class="technologies__name">js</p>
 								</div>
 								<div class="technologies__body">
 									<div class="technologies__icon">
-										<img src="img/skills/technologies/gulp.svg" alt="" />
+										<img src="@img/skills/technologies/gulp.svg" alt="" />
 									</div>
 									<p class="technologies__name">gulp</p>
 								</div>
@@ -144,23 +115,7 @@
 					<button href="#" class="contacts__button">Send message</button>
 				</section>
 			</main>
-			<footer class="footer" id="socials">
-	<div class="footer__socials">
-		<a target="_blank" href="https://github.com/Vladykkk"
-			><img src="img/socials/github.svg" alt=""
-		/></a>
-		<a
-			target="_blank"
-			href="https://www.linkedin.com/in/vladyslav-rybak-2698a2222/"
-			><img src="img/socials/linkedin.svg" alt=""
-		/></a>
-		<a target="_blank" href="https://www.instagram.com/vladyslavrybak/"
-			><img src="img/socials/instagram.svg" alt=""
-		/></a>
-	</div>
-	<p class="footer__copyright">beagle @ 2022</p>
-</footer>
-
+			@@include('html/footer.html',{})
 			<script src="js/script.js"></script>
 		</div>
 	</body>
