@@ -1,31 +1,3 @@
-/******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-var __webpack_exports__ = {};
-
-;// CONCATENATED MODULE: ./src/js/modules/functions.js
-// Перевірка підтримки webp, додавання класу webp або no-webp для HTML
-function isWebp() {
-	// Перевірка підтримки webp
-	function testWebP(callback) {
-		let webP = new Image();
-		webP.onload = webP.onerror = function () {
-			callback(webP.height == 2);
-		};
-		webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-	}
-	// Додавання класу _webp або _no-webp для HTML
-	testWebP(function (support) {
-		let className = support === true ? 'webp' : 'no-webp';
-		document.documentElement.classList.add(className);
-	});
-}
-;// CONCATENATED MODULE: ./src/js/script.js
-
-
-isWebp();
-
-// Main
-
 // Variables
 const header = document.querySelector(".header");
 
@@ -59,14 +31,12 @@ document.querySelectorAll(".header__logo, .header__link").forEach(n => n.addEven
 }))
 
 // Menu dissapear when scrolling
-window.addEventListener("scroll", () => {
-	if (lastScrollY < window.scrollY) {
-		header.classList.add("header--hidden");
-	} else {
-		header.classList.remove("header--hidden");
-	}
+// window.addEventListener("scroll", () => {
+// 	if (lastScrollY < window.scrollY) {
+// 		header.classList.add("header--hidden");
+// 	} else {
+// 		header.classList.remove("header--hidden");
+// 	}
 
-	lastScrollY = window.scrollY;
-});
-/******/ })()
-;
+// 	lastScrollY = window.scrollY;
+// });
