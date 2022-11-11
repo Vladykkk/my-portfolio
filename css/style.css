@@ -221,13 +221,6 @@ header {
 	}
 }
 
-/* Menu dissapear while scrolling */
-
-.header--hidden {
-	transform: translateY(-80px);
-	box-shadow: none;
-}
-
 /* Disabling out of burger menu scroll */
 
 @media (max-width: 49.99875em) {
