@@ -29,14 +29,3 @@ document.querySelectorAll(".header__logo, .header__link").forEach(n => n.addEven
 	burger.classList.remove("active");
 	menu.classList.remove("active");
 }))
-
-// Menu dissapear when scrolling
-// window.addEventListener("scroll", () => {
-// 	if (lastScrollY < window.scrollY) {
-// 		header.classList.add("header--hidden");
-// 	} else {
-// 		header.classList.remove("header--hidden");
-// 	}
-
-// 	lastScrollY = window.scrollY;
-// });
