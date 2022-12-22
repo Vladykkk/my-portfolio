@@ -1,3 +1,8 @@
 # my-portfolio
-- This is my portfolio page [check it out](https://vladykkk.github.io/my-portfolio/).
-- You can read about me, see my skills, and projects.
+- Link to my [portfolio page](https://vladykkk.github.io/my-portfolio/).
+- You can read about me, my skills, and projects.
+
+# Technologies what I use
+- HTML
+- CSS
+- JavaScript
