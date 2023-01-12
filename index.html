@@ -5,7 +5,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/reset.css" />
 		<title>Portfolio</title>
 	</head>
 
@@ -14,7 +13,9 @@
 			<header class="header">
 				<div class="header__container">
 					<div class="header__body">
-						<a href="index.html" class="header__logo">Vladyslav Rybak</a>
+						<a href="index.html" class="header__logo"
+							><h1>Vladyslav Rybak</h1></a
+						>
 						<div class="header__burger">
 							<span></span>
 						</div>
@@ -24,7 +25,6 @@
 								<li><a href="#skills" class="header__link">Skills</a></li>
 								<li><a href="#projects" class="header__link">Projects</a></li>
 								<li><a href="#contacts" class="header__link">Contacts</a></li>
-								<li><a href="#socials" class="header__link">Socials</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -54,7 +54,7 @@
 				</section>
 				<section class="about" id="about">
 					<div class="about__container">
-						<p class="about__title title">About me</p>
+						<div class="about__title title">About me</div>
 						<div class="about__text">
 							<p>
 								Second-year computer science student, future web developer, with
@@ -70,7 +70,7 @@
 					</div>
 				</section>
 				<section class="skills" id="skills">
-					<p class="skills__title title">Skills</p>
+					<div class="skills__title title">Skills</div>
 					<div class="skills__technologies">
 						<p class="technologies__title">What technologies do I use</p>
 						<div class="technologies__apps">
@@ -98,7 +98,7 @@
 					</div>
 				</section>
 				<section class="projects" id="projects">
-					<p class="projects__title title">Projects</p>
+					<div class="projects__title title">Projects</div>
 					<div class="projects__work">
 						<div class="projects__body">
 							<img
@@ -106,7 +106,9 @@
 								alt=""
 								class="projects__img"
 							/>
-							<p class="projects__subtitle">Bohdan Panchyshyn Portfolio</p>
+							<a href="#" target="_blank" class="projects__button"
+								>Bohdan Panchyshyn Portfolio</a
+							>
 						</div>
 						<div class="projects__body">
 							<img
@@ -117,19 +119,80 @@
 							<a
 								href="https://vladykkk.github.io/travel-explorer/"
 								target="_blank"
-								class="projects__subtitle"
+								class="projects__button"
 								>Travel Explorer</a
 							>
 						</div>
 					</div>
 				</section>
 				<section class="contacts" id="contacts">
-					<p class="contacts__title title">Contacts</p>
+					<div class="contacts__title title">Contacts</div>
 					<div class="contacts__subtitle">
 						<p>Want to know more or just chat?</p>
 						<p>You are welcome!</p>
 					</div>
-					<button href="#" class="contacts__button">Send message</button>
+					<div class="form">
+						<form action="#" id="form" class="form__body">
+							<h2 class="form__title">Contact Information</h2>
+							<div class="form__item">
+								<label for="formName" class="form__label"> Full name*: </label>
+								<input
+									id="formName"
+									type="text"
+									name="name"
+									class="form__input _req"
+								/>
+							</div>
+							<div class="form__item">
+								<label for="formEmail" class="form__label"> E-mail*: </label>
+								<input
+									id="formEmail"
+									type="text"
+									name="email"
+									class="form__input _req _email"
+								/>
+							</div>
+							<div class="form__item">
+								<label for="formNumber" class="form__label">
+									Phone number*:
+								</label>
+								<input
+									id="formEmail"
+									type="number"
+									name="number"
+									class="form__input"
+								/>
+							</div>
+							<div class="form__item">
+								<label for="formMessage" class="form__label"
+									>Повідомлення:</label
+								>
+								<textarea
+									name="message"
+									id="formMessage"
+									class="form__input"
+								></textarea>
+							</div>
+							<div class="form__item">
+								<div class="checkbox">
+									<input
+										id="formAgreement"
+										checked
+										type="checkbox"
+										name="agreement"
+										class="checkbox__input _req"
+									/>
+									<label for="formAgreement" class="checkbox__label"
+										><span>
+											I understand that this form collects my name and email so
+											I can be contacted</span
+										>
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="form__button">Send Data</button>
+						</form>
+					</div>
 				</section>
 			</main>
 

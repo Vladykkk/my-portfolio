@@ -1,0 +1,172 @@
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	background: #e5e5e5;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+
+.header {
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 50;
+	transition: all 0.3s ease 0s;
+}
+
+.header::before {
+	content: "";
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 2;
+	background-color: #e5e5e5;
+}
+
+.header__logo {
+	color: black;
+	font-size: 2rem;
+	font-weight: 700;
+	position: relative;
+	z-index: 3;
+}
+
+.header__body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	position: relative;
+}
+
+.header__list {
+	display: flex;
+	gap: 20px;
+	position: relative;
+	font-size: 1.125rem;
+	text-transform: uppercase;
+	z-index: 2;
+}
+
+.header__link {
+	color: #000;
+}
+
+.header__link {
+	position: relative;
+}
+
+.header__link::after {
+	content: "";
+	position: absolute;
+	background-color: #6c757d;
+	height: 3px;
+	width: 0;
+	left: 0;
+	bottom: -10px;
+	transition: all 0.3s;
+}
+
+.header__link:hover::after {
+	width: 100%;
+}
+
+/* Menu Burger */
+
+@media (max-width: 47.99875em) {
+	.header__burger {
+		display: block;
+		height: 20px;
+		width: 30px;
+		position: relative;
+		z-index: 3;
+	}
+
+	.header__burger span {
+		height: 2px;
+		width: 100%;
+		top: 9px;
+		left: 0;
+		position: absolute;
+		background-color: #000;
+		transition: all 0.3s ease 0s;
+	}
+
+	.header__burger::before,
+	.header__burger::after {
+		content: "";
+		height: 2px;
+		width: 100%;
+		left: 0;
+		position: absolute;
+		background-color: #000;
+		transition: all 0.3s ease 0s;
+	}
+
+	.header__burger::before {
+		top: 0;
+	}
+
+	.header__burger::after {
+		bottom: 0;
+	}
+
+	.header__burger.active::before {
+		top: 9px;
+		transform: rotate(45deg);
+	}
+
+	.header__burger.active::after {
+		bottom: 9px;
+		transform: rotate(-45deg);
+	}
+
+	.header__burger.active span {
+		transform: scale(0);
+	}
+
+	.header__menu {
+		height: 100%;
+		width: 100%;
+		top: -100%;
+		left: 0;
+		position: fixed;
+		padding: 70px 10px 0px 10px;
+		background-color: #ffffff;
+		transition: all 0.3s ease 0s;
+		overflow: auto;
+	}
+
+	.header__menu.active {
+		top: 0;
+	}
+
+	.header__body {
+		height: 50px;
+	}
+
+	.header__list {
+		display: block;
+	}
+
+	.header__list li {
+		margin: 0px 0px 20px 0px;
+	}
+
+	.header__link {
+		font-size: 1.5rem;
+	}
+}
+
+/* Disabling out of burger menu scroll */
+
+@media (max-width: 49.99875em) {
+	body.lock {
+		overflow: hidden;
+	}
+}

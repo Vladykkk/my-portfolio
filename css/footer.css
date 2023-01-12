@@ -1,0 +1,30 @@
+/* Footer */
+
+.footer {
+	padding: 30px 0;
+	background-color: #ededed;
+	text-align: center;
+}
+
+.footer__socials {
+	padding: 0px 0px 25px 0px;
+}
+
+.footer__socials img {
+	max-width: 45px;
+	width: 100%;
+	opacity: 75%;
+}
+
+.footer__socials a {
+	margin: 0 8px;
+}
+
+.footer__socials a:hover {
+	transition: 0.3s;
+	opacity: 70%;
+}
+
+.footer__copyright {
+	color: #aaa;
+}
