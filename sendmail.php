@@ -8,7 +8,7 @@ require "phpmailer/src/PHPMailer.php";
 $mail = new PHPMailer(true);
 $mail->CharSet = "UTF-8";
 $mail->setLanguage("ua", "phpmailer/language/");
-$mail->isHTML(true);
+$mail->IsHTML(true);
 
 // Від кого письмо
 $mail->setFrom("rubakvlad7@gmail.com", "Рибак Владислав");
@@ -41,7 +41,7 @@ $mail->Body = $body;
 if (!$mail->send()){
 	$message = "Error";
 } else {
-	$message = "Data was send";
+	$message = "Message was send";
 }
 
 $response = ["message" => $message];
