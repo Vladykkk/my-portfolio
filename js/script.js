@@ -35,15 +35,14 @@ document.querySelectorAll(".header__logo, .header__link").forEach(n => n.addEven
 
 document.addEventListener("DOMContentLoaded", function () {
 	const form = document.getElementById("form");
-
 	form.addEventListener("submit", formSend);
 
 	async function formSend(e) {
 		e.preventDefault();
 
 		let error = formValidate(form);
-
 		let formData = new FormData(form);
+
 
 		if (error === 0) {
 			form.classList.add("_sending");
