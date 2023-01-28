@@ -7,26 +7,25 @@ const list = document.querySelector(".header__list");
 const logo = document.querySelector(".header__logo")
 const moveLock = document.querySelector(".body");
 
-const lastScrollY = window.scrollY;
+let isMenuOpen = false;
 
 // Close menu on icon
-burger.onclick = function () {
+burger.addEventListener("click", function () {
 	burger.classList.toggle("active");
 	menu.classList.toggle("active");
-	moveLock.classList.toggle("lock");
-}
-
-list.onclick = function () {
-	list.classList.remove("active");
-	moveLock.classList.toggle("lock");
-}
-
-logo.onclick = function () {
-	moveLock.classList.remove("lock");
-}
+	moveLock.classList.toggle("lock", !isMenuOpen);
+	isMenuOpen = !isMenuOpen;
+});
 
 // Close menu on link click
 document.querySelectorAll(".header__logo, .header__link").forEach(n => n.addEventListener("click", () => {
 	burger.classList.remove("active");
 	menu.classList.remove("active");
+	moveLock.classList.remove("lock");
+	isMenuOpen = false;
 }));
+
+logo.addEventListener("click", function () {
+	moveLock.classList.remove("lock");
+	isMenuOpen = false;
+});
