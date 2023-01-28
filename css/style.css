@@ -16,18 +16,18 @@
 /* Top */
 
 .top {
-	margin: 80px 0px 0px 0px;
-	padding: 40px 0px 0px 0px;
+	margin-top: 80px;
+	padding-top: 40px;
 }
 
 @media (max-width: 49.99875em) {
 	.top {
-		margin: 50px 0px 0px 0px;
+		margin-top: 50px;
 	}
 }
 
 .top__img {
-	margin: 0px 0px 100px 0px;
+	margin-bottom: 100px;
 }
 
 .top__img img {
@@ -41,7 +41,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0px 0px 30px 0px;
+	margin-bottom: 30px;
 }
 
 @media (max-width: 49.99875em) {
@@ -65,7 +65,7 @@
 /* About */
 
 .about {
-	padding: 100px 0px;
+	padding: 100px 0;
 	text-align: center;
 	background-color: #e5e5e5;
 }
@@ -75,7 +75,7 @@
 }
 
 .about__title {
-	margin: 0px 0px 30px 0px;
+	margin-bottom: 30px;
 }
 
 .about__text {
@@ -84,7 +84,7 @@
 }
 
 .about__text p {
-	margin: 0px 0px 40px 0px;
+	margin-bottom: 40px;
 }
 
 /* Skills */
